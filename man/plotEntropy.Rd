@@ -9,9 +9,14 @@ plotEntropy(
   time,
   minTime = min(time),
   maxTime = max(time),
+  drawBox = FALSE,
   xNoAxis = TRUE,
   xAt = NULL,
-  xLabels = TRUE
+  xLabels = TRUE,
+  fillColor = NULL,
+  lineColor = "black",
+  ylab = "Entropy",
+  cex.label = 0.75
 )
 }
 \arguments{
@@ -22,6 +27,8 @@ plotEntropy(
 \item{minTime}{Minimum time to plot}
 
 \item{maxTime}{Maximum time to plot}
+
+\item{drawBox}{Add box around plot}
 
 \item{xNoAxis}{Do not show x-axis}
 
