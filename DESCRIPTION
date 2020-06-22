@@ -1,11 +1,13 @@
 Package: MarkovJumpR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Compute and plot Markov Jump inferences from BEAST
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Authors@R: c(
+    person("Marc A.", "Suchard", email = "msuchard@ucla.edu", role = c("aut","cre")),
+    person("Philippe", "Lemey", role = "aut")
+    )
+Description: This plotting tool reports Markov Jump inference from the
+    popular Bayesian Evolutionary Analysis by Sampling Trees software.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
