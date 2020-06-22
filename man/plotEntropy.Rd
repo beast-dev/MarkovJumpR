@@ -35,6 +35,14 @@ plotEntropy(
 \item{xAt}{Time axis \code{at} values}
 
 \item{xLabels}{Time axis \code{labels} values}
+
+\item{fillColor}{Color to fill in below entropy time-series}
+
+\item{lineColor}{Color of entropy time-series}
+
+\item{ylab}{Y-axis label text}
+
+\item{cex.label}{Y-axis label size}
 }
 \description{
 Plots entropy for one taxon

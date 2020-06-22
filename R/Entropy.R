@@ -27,8 +27,14 @@ getEntropy <- function(paths, time) {
 #' @param xNoAxis  Do not show x-axis
 #' @param xAt Time axis \code{at} values
 #' @param xLabels Time axis \code{labels} values
+#' @param fillColor Color to fill in below entropy time-series
+#' @param lineColor Color of entropy time-series
+#' @param ylab Y-axis label text
+#' @param cex.label Y-axis label size
 #'
 #' @return NULL
+#'
+#' @importFrom graphics lines polygon title
 #'
 #' @export
 plotEntropy <- function(entropy,
@@ -71,17 +77,4 @@ plotEntropy <- function(entropy,
   if (drawBox) {
     box()
   }
-}
-
-getCharbydisRdsFile <- function(package = "Covid19CharacterizationCharybdis",
-                                destfile) {
-
-  if (missing(destfile)) {
-    destfile <- tempfile()
-  }
-
-  utils::download.file(url = paste0("https://github.com/OHDSI/ShinyDeploy/blob/master/", package, "/data/PreMerged.RData?raw=true"),
-                       destfile = destfile)
-
-  attach(destfile)
 }
